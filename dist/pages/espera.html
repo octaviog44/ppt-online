@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Espera</title>
+    <link rel="stylesheet" href="./espera.css">
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="puntajes">
+            <p class="puntaje1">Jugador 1: 0</p>
+            <p class="puntaje2">Jugador 2: 0</p>
+        </div>
+        <div class="sala">
+            <p class="sala__nombre">Sala</p>
+            <p class="codigo__sala" id="codigo-sala">Esperando...</p>
+        </div>
+    </div>
+    <div class="contenedor-codigo">
+        <p class="titulo">Comparte el siguiente código:</p>
+        <h1 id="codigoSala" class="codigoSala">Código de Sala: ----</h1>
+        <button onclick="crearSala()">Generar Codigo</button>
+        <p class="subtitulo">con tu contrincante</p>
+    </div> 
+    <div class="opciones">
+        <img src="../../dist/imagen/tijera.png" alt="" class="imagen__tijera">
+        <img src="../../dist/imagen/piedra.png" alt="" class="imagen__piedra">
+        <img src="../../dist/imagen/papel.png" alt="" class="imagen__papel">
+    </div> 
+
+    <script>
+        function crearSala() { 
+            let codigo = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById("codigoSala").innerText = "Código de Sala: " + codigo;
+        }
+    </script>
+    
+    <div id="unirse-sala">
+        <input type="number" id="codigo-input" placeholder="Ingresa el código de la sala">
+        <button id="unirse-sala-btn">Unirse a Sala</button>
+    </div>
+    <!-- Cargar tu script al final del body -->
+    <script src="./app.js"></script>
+</body>
+</html>

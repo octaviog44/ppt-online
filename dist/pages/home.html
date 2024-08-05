@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel y Tijera</title>
+    <link rel="stylesheet" href="index.css">
+     <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="contenedor-general">
+        <div class="opciones">
+            <img src="imagen/tijera.png" alt="" class="imagen__tijera">
+            <img src="imagen/piedra.png" alt="" class="imagen__piedra">
+            <img src="imagen/papel.png" alt="" class="imagen__papel">
+            <div class="contenedor-titulo">
+                <my-component></my-component>
+                <div class="contenedor__boton">
+                    <button data-navigate="pages/nombre.html"  id="room-code-input" class="nuevo__boton">Nuevo Juego</button>
+                    <input type="number" id="room-code-input" placeholder="Código de la Sala" class="room-code-input">
+                    <button id="join-room-btn" data-navigate="pages/jugar.html">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../../dist/components/my-components.js"></script>
+    <script type="module" src="../../dist/components/my-button.js"></script>
+    <script src="../../dist/router.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

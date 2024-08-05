@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagen/fondo.png);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.puntajes{
+    display: flex;
+    flex-direction: column;
+}
+
+.puntaje1{
+    margin: 5px;
+    font-size: 24px;
+}
+
+.puntaje2{
+    margin: 5px;
+    font-size: 24px;
+}
+
+.titulo{
+    font-size: 35px;
+}
+
+.subtitulo{
+    font-size: 35px;
+}
+
+.codigo{
+    font-size: 48px;
+}
+
+.contenedor-codigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sala__nombre{
+    font-size: 24px;
+    margin: 5px;
+}
+
+.codigo__sala{
+    font-size: 24px;
+    margin: 5px;
+}
+
+
+.sala{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.codigoSala{
+    display: flex;
+    
+}

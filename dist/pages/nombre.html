@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nombre.css">
+</head>
+<body>
+    <div class="contenedor__principal">
+        <h1 class="titulo__juego">Piedra Papel o Tijera</h1>
+        <p class="nombre">Tu Nombre</p>
+        <input type="text" class="input__nombre">
+        <my-button data-navigate="espera.html"  onclick="crearSala()"></my-button>
+        <script type="module" src="../../dist/components/my-button.js"></script>
+        <div class="opciones">
+            <img src="../../dist/imagen/tijera.png" alt="" class="imagen__tijera">
+            <img src="../../dist/imagen/piedra.png" alt="" class="imagen__piedra">
+            <img src="../../dist/imagen/papel.png" alt="" class="imagen__papel">
+         </div>   
+    </div>
+</body>
+</html>

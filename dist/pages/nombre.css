@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagen/fondo.png);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__juego{
+    font-size: 80px;
+    color: #009048;
+    margin: 5px;
+}
+
+.nombre{
+    font-size: 45px;
+    color: #000000;
+    margin: 5px;
+}
+
+.input__nombre{
+    width: 336px;
+    height: 84px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+
+.contenedor__principal{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones{
+    margin-top: 55px;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "piedra-papel-tijera",
+  "version": "1.0.0",
+  "description": "es un juego de piedra , papel o  tijeras contra la maquina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "copyfiles -u 1 src/imagen/* dist/imagen/* src/pages/*.html src/pages/*.css src/*.html  src/*.css src/app.js src/components/* dist/",
+    "dev": "nodemon --watch './index.ts' --exec './node_modules/.bin/ts-node index.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.4",
+    "firebase-admin": "^12.2.0",
+    "gh-pages": "^6.1.1",
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/firebase": "^3.2.1",
+    "@types/uuid": "^10.0.0",
+    "copyfiles": "^2.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
